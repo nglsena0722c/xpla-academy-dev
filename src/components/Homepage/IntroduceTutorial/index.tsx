@@ -26,7 +26,7 @@ export default function IntroduceTutorial(): JSX.Element {
       color: "#F93AC3",
       contents: [
         {
-          link: "/docs/category/지갑-생성하기",
+          link: "/docs/category/create-wallet",
           description: (
             <div className="font-semibold text-[24px] h-[197px]">
               Experience the<br/>
