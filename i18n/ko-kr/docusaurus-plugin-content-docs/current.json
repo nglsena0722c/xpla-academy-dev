@@ -3,7 +3,7 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.create-wallet": {
+  "sidebar.tutorialSidebar.category.Create wallet": {
     "message": "지갑 생성하기",
     "description": "this is 지갑 생성하기"
   },
