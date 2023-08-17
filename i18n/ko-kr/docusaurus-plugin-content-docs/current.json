@@ -5,6 +5,7 @@
   },
   "sidebar.tutorialSidebar.category.Create wallet": {
     "message": "지갑 생성하기",
+    "title": "지갑 생성하기",
     "description": "this is 지갑 생성하기"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
