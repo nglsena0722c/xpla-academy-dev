@@ -13,6 +13,9 @@ import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
 import styles from './styles.module.css';
 import clsx from 'clsx';
+import Connect from "@site/src/components/Wallet/Connect";
+import WalletWrap from "@site/src/components/Wallet/WalletWrap";
+
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
   return useThemeConfig().navbar.items;
@@ -41,7 +44,11 @@ function NavbarContentLayout({left, right}) {
   return (
     <div className="navbar__inner max-w-[1180px]">
       <div className="navbar__items">{left}</div>
-      <div className="navbar__items navbar__items--right">{right}</div>
+      <div className="navbar__items navbar__items--right">
+        <WalletWrap>
+          <Connect />
+        </WalletWrap>
+        {right}</div>
     </div>
   );
 }
