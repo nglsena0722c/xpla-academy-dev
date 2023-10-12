@@ -84,6 +84,11 @@ const config = {
             label: 'Tutorial',
           },
           {
+            to: 'tool',
+            label: 'Tool',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/xpladev',
             className: 'header-github-link',
             position: 'right',

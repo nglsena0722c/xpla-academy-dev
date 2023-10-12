@@ -63,10 +63,10 @@ function HomepageHeader({ onMoveToElement }: { onMoveToElement: () => void }) {
 }
 
 export default function Home(): JSX.Element {
-  const element = useRef<HTMLDivElement>(null);
-  const onMoveToElement = () => {
+  const devResourceElement = useRef<HTMLDivElement>(null);
+  const onMoveTodevResourceElement = () => {
     var headerOffset = 80;
-    var elementPosition = element.current.getBoundingClientRect().top;
+    var elementPosition = devResourceElement.current.getBoundingClientRect().top;
     var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
     window.scrollTo({
@@ -75,15 +75,22 @@ export default function Home(): JSX.Element {
     })
   };
 
-  const [chainOptions, setChainoptions] =
-    useState<WalletControllerChainOptions>();
+  const playgameElement = useRef<HTMLDivElement>(null);
+  const onMoveToPlaygameElement = () => {
+    var headerOffset = 80;
+    var elementPosition = playgameElement.current.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+      top : offsetPosition,
+      behavior : "smooth"
+    })
+  };
 
   useEffect(() => {
-    getChainOptions()
-      .then((c) => setChainoptions(c))
-      .catch((e) => {
-        // console.log(e);
-      });
+    if (window.location.hash === "#playgame") {
+      onMoveToPlaygameElement();
+    } 
   }, []);
 
   return (
@@ -92,12 +99,14 @@ export default function Home(): JSX.Element {
       description="Tutorials & Guides for Integrating XPLA into your project! Master the world of XPLA step by step."
     >
       <AdBanner />
-      <HomepageHeader onMoveToElement={onMoveToElement} />
+      <HomepageHeader onMoveToElement={onMoveTodevResourceElement} />
+
       <main>
         <HomepageFeatures />
-        <PlayGame />
+        <PlayGame moveToElement={playgameElement}/>
         <IntroduceTutorial />
-        <DevResource moveToElement={element} />
+        <DevResource moveToElement={devResourceElement} />
+
         <JoinCommunity />
         <ContactUs />
       </main>

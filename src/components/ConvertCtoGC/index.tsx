@@ -80,7 +80,7 @@ const TestConvert = ({
       const { result: signedTx, success } = await connectedWallet.sign({
         msgs: decodedTx.body.messages,
         fee: decodedTx.auth_info.fee,
-        signMode: SignMode.SIGN_MODE_LEGACY_AMINO_JSON,
+        signMode: SignMode.SIGN_MODE_DIRECT,
       });
 
       if (!success) {
