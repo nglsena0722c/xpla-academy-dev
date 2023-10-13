@@ -84,7 +84,7 @@ const sidebars = {
         title: '심화 - XPLA 블록체인 깊게 이해하기',
         // description: ''
       },
-      items: ['tutorial/deep-understand-xpla/local-network', 'tutorial/deep-understand-xpla/account-sequence', 'tutorial/deep-understand-xpla/walletprovider', 'tutorial/deep-understand-xpla/write-contract', 'tutorial/deep-understand-xpla/convert'],
+      items: ['tutorial/deep-understand-xpla/local-network', 'tutorial/deep-understand-xpla/account-sequence', 'tutorial/deep-understand-xpla/walletprovider', 'tutorial/deep-understand-xpla/write-contract', 'tutorial/deep-understand-xpla/convert', 'tutorial/deep-understand-xpla/swap'],
     },
   ],
 };

@@ -13,7 +13,7 @@ import Details from '@theme/Details';
 [Tool 페이지](/tool)에서 제공하는 Convert 기능을 통해, 유저들은 <img src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-diamond.svg" width="16" height="16" />를 CW20 토큰인 <img src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg" width="16" height="16" />으로 교환할 수 있습니다.
 
 Convert 과정은 왜 필요할까요? 
-게임 플레이 보상으로 매번 CW20 토큰 <img src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg" width="16" height="16" />을 나눠준다면, 항상 Send를 위해 트랜잭션 수수료가 발생하게 됩니다.
+게임 플레이 보상으로 매번 CW20 토큰 <img src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg" width="16" height="16" />을 나눠준다면, 항상 트랜잭션 실행을 위해 수수료가 발생하게 됩니다.
 수수료 부담을 줄이기 위해 게임 플레이 보상으로 게임 재화인 <img src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-diamond.svg" width="16" height="16" />를 전달하고, **유저가 원할 때 게임 재화(<img src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-diamond.svg" width="16" height="16" />)와 CW20 토큰(<img src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg" width="16" height="16" />)을 교환**하는 **Convert** 방식을 도입했습니다.
 이번 단계에서는 Convert 기능을 어떻게 구현하는지 살펴보겠습니다.
 
@@ -253,7 +253,7 @@ Sequence mismatch 개념을 모르시거나 관련 내용이 잘 이해가 되�
     현재 트랜잭션(allSignedTx 변수) 내 서명 순서가 유저 지갑 - 게임 운영 지갑 순입니다.
 
     CW20 토큰을 전달하는 트랜잭션 Execute에 필요한 서명은 게임 운영 지갑의 서명이고, 유저의 서명은 수수료 지불을 위해 추가된 것입니다.
-    만약 유저가 트랜잭션 수수료를 내지 않았다면, CW20 토큰을 Send하는 게임 운영 지갑의 서명만 있었으면 됩니다.
+    만약 유저가 트랜잭션 수수료를 내지 않았다면, CW20 토큰을 Transfer하는 게임 운영 지갑의 서명만 있었으면 됩니다.
 
     [Cosmos SDK에서 수수료 지불자(Fee payer)가 추가되어도, 트랜잭션 서명 순서가 바뀌지는 않습니다.](https://github.com/xpladev/xpla/blob/main/third_party/proto/cosmos/tx/v1beta1/tx.proto#L174C1-L176C96)
     따라서 올바른 트랜잭션 서명 순서는 게임 운영 지갑 - 유저 지갑 순입니다.
