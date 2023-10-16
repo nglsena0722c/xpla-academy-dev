@@ -40,7 +40,7 @@ Dezswap Contract는 [Automated Market-Maker(AMM) 프로토콜](https://docs.dezs
 컨트랙트 주소는 [xpla13mxqv7yqedcpm67fw7yz7p4s32rlsdkaae3ecmc0tram72ewefts2uu3ax](https://explorer.xpla.io/testnet/address/xpla13mxqv7yqedcpm67fw7yz7p4s32rlsdkaae3ecmc0tram72ewefts2uu3ax)입니다.
 
 CW20 토큰을 생성하는 Javascript 코드는 아래와 같습니다. 
-[토큰(CW20) 발행 및 전송하기 (Javascript)](/docs/tutorial/make-cw20/make-cw20-with-js) 단계에서 사용한 코드 중 name과 symbol만 `ACAD`로  수정하였습니다.
+[토큰(CW20) 발행 및 전송하기 (Javascript)](/docs/tutorial/make-cw20/make-cw20-with-js) 단계에서 사용한 코드 중 name과 symbol만 수정하였습니다.
 
 ```js {17,18}
 const { LCDClient, MnemonicKey, MsgInstantiateContract } = require("@xpla/xpla.js");
@@ -94,7 +94,7 @@ dezswap_factory 컨트랙트 주소는 Mainnet의 경우 `xpla1j33xdql0h4kpgj2mh
 
 dezswap_factory 컨트랙트의 [create_pair 함수](https://github.com/dezswap/dezswap-contracts/tree/main/contracts/dezswap_factory#create_pair)를 Execute하는 Javascript 코드는 아래와 같습니다. 
 
-```js {14,27,35}
+```js {16,27,35}
 const { LCDClient, MnemonicKey, MsgExecuteContract } = require("@xpla/xpla.js");
 
 const lcd = new LCDClient({
@@ -153,7 +153,7 @@ main()
 트랜잭션 결과는 [XPLA Explorer](https://explorer.xpla.io/testnet/tx/1b6f0d98e79b3232cb2f8c9df6b46f4859b70820facf063a66710f90c158b642#Messages)에서 확인할 수 있습니다.
 여러분은 실행하실 때 `contract_addr` 항목에 여러분이 만든 CW20 토큰 컨트랙트 주소를 기입해야 합니다.
 
-[Event Logs](https://explorer.xpla.io/testnet/tx/f36baf53443365ea7bdb706f1bfd1b61f13ef7696e5bd155ed3996958b2364b9#EventLogs)를 확인해보면, 새로운 컨트랙트가 `instantiate`된 것을 알 수 있습니다. 
+[Event Logs](https://explorer.xpla.io/testnet/tx/1B6F0D98E79B3232CB2F8C9DF6B46F4859B70820FACF063A66710F90C158B642#EventLogs)를 확인해보면, 새로운 컨트랙트가 `instantiate`된 것을 알 수 있습니다. 
 이 중 `code_id`가 369인 컨트랙트는 [dezswap_pair Contract](https://github.com/dezswap/dezswap-contracts/tree/main/contracts/dezswap_pair)이고, `code_id`가 110인 컨트랙트는 [dezswap_token Contract](https://github.com/dezswap/dezswap-contracts/tree/main/contracts/dezswap_token)입니다(`code_id`는 Testnet기준이며, Mainnet의 `code_id`는 다릅니다.).
 예제에서 dezswap_pair Contract는 [xpla1hzmcz38u28g6duy4gmur705e8qrdq7uvzsue4d8hdvclxz79uppsw3hfns](https://explorer.xpla.io/testnet/address/xpla1hzmcz38u28g6duy4gmur705e8qrdq7uvzsue4d8hdvclxz79uppsw3hfns#InitMsg), dezswap_token Contract는 [xpla1ntr800lgjg59d79tr9c78kxjv9v9wm04hjdyq945663juf23hvqq0xy057](https://explorer.xpla.io/testnet/address/xpla1ntr800lgjg59d79tr9c78kxjv9v9wm04hjdyq945663juf23hvqq0xy057#InitMsg)입니다.
 
@@ -343,8 +343,6 @@ XPLA를 CW20 토큰으로 교환할 때는 실행해야 하는 컨트랙트가 �
 그러나 dezswap에서는 swap을 할 때 [유동성 공급을 해준 사람에게 LP Commission을 0.3%만큼 지급](https://docs.dezswap.io/docs/introduction/trading-fees/)해야 합니다.
 따라서 0.3%만큼 수수료를 냈을 때, 남은 XPLA 0.000996900309969002개를 받게 됩니다.
 더 자세한 사항은 [dezswap Docs](https://docs.dezswap.io/docs/introduction/mechanism/)를 참고해보세요.
-
-여러분이 직접 구현한다면 유저들이 쉽게 Swap을 이용할 수 있도록, 따로 페이지를 제작하여 트랜잭션을 실행하는 API를 연결하는 것도 좋습니다. 
 
 ## 마무리
 
