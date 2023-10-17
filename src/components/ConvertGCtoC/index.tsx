@@ -4,7 +4,14 @@ import {
   useConnectedWallet,
   useWallet,
 } from "@xpla/wallet-provider";
-import { LCDClient, SignMode, SimplePublicKey, Tx } from "@xpla/xpla.js";
+import {
+  LCDClient,
+  MsgExecuteContract,
+  SignMode,
+  SimplePublicKey,
+  Tx,
+  TxAPI,
+} from "@xpla/xpla.js";
 import axios from "axios";
 import clsx from "clsx";
 import React, { useState } from "react";
@@ -28,6 +35,7 @@ const TestConvert = ({
   const [requestError, setRequestError] = useState<string | null>(null);
   const [txhash, setTxhash] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
+  const [estimateFee, setEstimateFee] = useState<string | null>(null);
 
   const form = useForm<CONVERTFORM>({ mode: "onChange" });
   const connectedWallet = useConnectedWallet();
@@ -50,11 +58,11 @@ const TestConvert = ({
   const chainID = "cube_47-5";
   const URL = "https://cube-lcd.xpla.dev";
   const walletServerAddr = "https://gw-qa-gcl.c2xstation.net:40202";
+  const lcd = new LCDClient({ chainID, URL });
 
   const onSubmit = async ({ ...submitValues }: CONVERTFORM) => {
     try {
       const { amount } = submitValues;
-      const lcd = new LCDClient({ chainID, URL });
       const userAddress = wallets[0].xplaAddress;
       const addressinfo = await lcd.auth.accountInfo(userAddress);
       const pubkey = addressinfo.getPublicKey() as SimplePublicKey;
@@ -135,6 +143,31 @@ const TestConvert = ({
     }
   }
 
+  const getTxFee = async () => {
+    const serverAdd = "xpla16rckux27qz5rv4etjk0rdm675ct26v9w8uk286";
+    const cw20_contract =
+      "xpla1shxdwyus9u6tgvu6kl5tdgem4d4at9vhanq0hxyqnm4ly3wd8awqkwlcj3";
+    const accInfo = await lcd.auth.accountInfo(serverAdd);
+    const recipient = wallets[0].xplaAddress;
+    const transferMsg = new MsgExecuteContract(serverAdd, cw20_contract, {
+      transfer: {
+        recipient,
+        amount: String(values.amount) + "000000",
+      },
+    });
+    const pubkey = accInfo.getPublicKey() as SimplePublicKey;
+
+    const tx_api = new TxAPI(lcd);
+    const simul_fee = await tx_api.estimateFee(
+      [{ sequenceNumber: accInfo.getSequenceNumber(), publicKey: pubkey }],
+      {
+        msgs: [transferMsg],
+        gasAdjustment: 1.5,
+      }
+    );
+    setEstimateFee(simul_fee.amount.toString());
+  };
+
   return (
     <div
       className={clsx(
@@ -157,9 +190,14 @@ const TestConvert = ({
           >
             <div className="flex gap-2">
               <div className="min-w-[100px]">Amount :</div>
-              <input {...register("amount")} />
+              <input
+                {...register("amount", {
+                  onBlur: getTxFee,
+                })}
+              />
             </div>
 
+            {estimateFee && <div>{estimateFee}</div>}
             <button
               type="submit"
               className=" cursor-pointer py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
