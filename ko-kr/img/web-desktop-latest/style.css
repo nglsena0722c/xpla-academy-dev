@@ -46,3 +46,9 @@ canvas {
   --safe-bottom: env(safe-area-inset-bottom);
   --safe-left: env(safe-area-inset-left);
 }
+
+@media (forced-colors: active) {
+  body {
+    forced-color-adjust: none;
+  }
+}
