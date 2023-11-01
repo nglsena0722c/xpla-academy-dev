@@ -19,3 +19,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+@media (forced-colors: active) {
+  body {
+    forced-color-adjust: none;
+  }
+}
