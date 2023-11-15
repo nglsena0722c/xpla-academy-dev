@@ -45,9 +45,9 @@ function NavbarContentLayout({left, right}) {
     <div className="navbar__inner max-w-[1180px]">
       <div className="navbar__items">{left}</div>
       <div className="navbar__items navbar__items--right">
-        <WalletWrap>
+        {/* <WalletWrap>
           <Connect />
-        </WalletWrap>
+        </WalletWrap> */}
         {right}</div>
     </div>
   );
