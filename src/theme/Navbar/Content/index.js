@@ -15,6 +15,7 @@ import styles from './styles.module.css';
 import clsx from 'clsx';
 import Connect from "@site/src/components/Wallet/Connect";
 import WalletWrap from "@site/src/components/Wallet/WalletWrap";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -57,6 +58,8 @@ export default function NavbarContent() {
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
   const searchBarItem = items.find((item) => item.type === 'search');
+  const isMobile = useMediaQuery('(max-width:996px)');
+
   return (
     <NavbarContentLayout
       left={
@@ -69,7 +72,7 @@ export default function NavbarContent() {
           {
             leftItems.map((leftItem, index) => {
               return <NavbarItem {...leftItem} className={index === 0 ? "text-white ml-[78px]" : "text-white ml-[28px]"} />
-            })
+            })  
           }
           {/* <div className={clsx("font-semibold ml-10", styles.tool)} /> */}
         </>
@@ -78,7 +81,7 @@ export default function NavbarContent() {
         // TODO stop hardcoding items?
         // Ask the user to add the respective navbar items => more flexible
         <>
-          <NavbarItems items={rightItems} />
+          <NavbarItems items={isMobile ? rightItems.filter((item) => item.type !== 'search') : rightItems} />
           {/* <NavbarColorModeToggle className={styles.colorModeToggle} /> */}
 
         </>
