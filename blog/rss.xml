@@ -28,6 +28,13 @@
             <category>docusaurus</category>
         </item>
         <item>
+            <title><![CDATA[Test]]></title>
+            <link>https://nglsena0722c.github.io/xpla-academy-dev/blog/test</link>
+            <guid>https://nglsena0722c.github.io/xpla-academy-dev/blog/test</guid>
+            <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
+            <category>docusaurus</category>
+        </item>
+        <item>
             <title><![CDATA[Long Blog Post]]></title>
             <link>https://nglsena0722c.github.io/xpla-academy-dev/blog/long-blog-post</link>
             <guid>https://nglsena0722c.github.io/xpla-academy-dev/blog/long-blog-post</guid>

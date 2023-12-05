@@ -39,6 +39,17 @@
         <category label="docusaurus" term="docusaurus"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Test]]></title>
+        <id>https://nglsena0722c.github.io/xpla-academy-dev/blog/test</id>
+        <link href="https://nglsena0722c.github.io/xpla-academy-dev/blog/test"/>
+        <updated>2021-08-01T00:00:00.000Z</updated>
+        <author>
+            <name>Sébastien Lorber</name>
+            <uri>https://sebastienlorber.com</uri>
+        </author>
+        <category label="docusaurus" term="docusaurus"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Long Blog Post]]></title>
         <id>https://nglsena0722c.github.io/xpla-academy-dev/blog/long-blog-post</id>
         <link href="https://nglsena0722c.github.io/xpla-academy-dev/blog/long-blog-post"/>
