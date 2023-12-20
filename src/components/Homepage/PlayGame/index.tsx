@@ -21,7 +21,7 @@ export default function PlayGame({
           Experience game building on XPLA
         </div>
       </div>
-      {matches ? <img src="/img/PlayGame/comingsoon.svg" /> : <Cocosgame />}
+      {matches ? <img src="/xpla-academy-dev/img/PlayGame/comingsoon.svg" /> : <Cocosgame />}
     </section>
   );
 }
