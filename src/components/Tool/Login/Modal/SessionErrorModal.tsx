@@ -49,8 +49,8 @@ const SessionErrorModal = () => {
       <div className="relative flex justify-center items-center leading-[25px]">
         <Picture
           sources={[
-            `/img/tool/Login/sessionErrorBg.webp`,
-            `/img/tool/Login/sessionErrorBg.svg`,
+            `/xpla-academy-dev/img/tool/Login/sessionErrorBg.webp`,
+            `/xpla-academy-dev/img/tool/Login/sessionErrorBg.svg`,
           ]}
           alt="SessionErrorBg"
           width="399px"
