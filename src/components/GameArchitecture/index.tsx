@@ -271,7 +271,7 @@ export const GameArchitectureAdvanced = () => {
         </div>
         <Link
           target="_blank"
-          to="/docs/category/utilize-nftcw721"
+          to="/docs/category/nftcw721-다루기"
           className={clsx(
             styles.smallShadowButton,
             "mb-[20px] px-[10px] py-[10px] bg-[#C9FF00] text-[16px] font-semibold hover:no-underline text-center leading-[20px]"
