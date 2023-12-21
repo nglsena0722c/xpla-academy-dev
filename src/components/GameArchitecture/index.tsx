@@ -40,7 +40,7 @@ export const GameArchitectureTutorial = () => {
         </div>
         <Link
           target="_blank"
-          to="/docs/category/lets-get-your-wallet-ready"
+          to="/docs/category/create-wallet"
           className={clsx(
             styles.smallShadowButton,
             "mt-[20px] px-[10px] py-[10px] bg-[#00B2FC] text-[16px] font-semibold hover:no-underline"
@@ -67,7 +67,7 @@ export const GameArchitectureTutorial = () => {
         </div>
         <Link
           target="_blank"
-          to="/docs/category/utilize-tokens-cw20"
+          to="/docs/category/토큰cw20-다루기"
           className={clsx(
             styles.smallShadowButton,
             "mt-[-10px] px-[10px] py-[10px] bg-[#00B2FC] text-[16px] font-semibold hover:no-underline"
@@ -80,7 +80,7 @@ export const GameArchitectureTutorial = () => {
         </div>
         <Link
           target="_blank"
-          to="/docs/category/utilize-nftcw721"
+          to="/docs/category/nftcw721-다루기"
           className={clsx(
             styles.smallShadowButton,
             "mb-[20px] px-[10px] py-[10px] bg-[#C9FF00] text-[16px] font-semibold hover:no-underline"
