@@ -75,7 +75,7 @@ const sidebars = {
         title: 'NFT(CW721) 다루기',
         // description: ''
       },
-      items: ['tutorial/make-cw721/make-nft-vault', 'tutorial/make-cw721/make-nft-js', 'tutorial/make-cw721/query-cw721'],
+      items: ['tutorial/make-cw721/make-nft-vault', 'tutorial/make-cw721/make-nft-js', 'tutorial/make-cw721/query-cw721', 'tutorial/make-cw721/send-cw721'],
     },
     {
       type: 'category',

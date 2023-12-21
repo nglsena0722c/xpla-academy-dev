@@ -163,3 +163,8 @@ html[data-theme='dark'] .sidebar-divider {
 .input:focus-visible {
   outline: none;
 }
+
+.docusaurus-mermaid-container {
+  display : flex;
+  justify-content: center;
+}
