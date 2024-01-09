@@ -86,7 +86,8 @@
 	/* Safari and Chrome */
 	-o-animation: convertButtonOnAni 500ms;
 	/* Opera */
-	animation-fill-mode: forwards;
+		background-color: #6600FF;
+		animation-fill-mode: forwards;
 }
 
 @keyframes convertButtonOnAni {
@@ -144,6 +145,7 @@
 	-o-animation: convertButtonOffAni 500ms;
 	/* Opera */
 	animation-fill-mode: forwards;
+	background-color: #3F3F3F;
 }
 
 @keyframes convertButtonOffAniAni {

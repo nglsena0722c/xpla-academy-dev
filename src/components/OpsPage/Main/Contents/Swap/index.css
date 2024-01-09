@@ -6,7 +6,8 @@
     /* Safari and Chrome */
     -o-animation: swapButtonOnAni 500ms;
     /* Opera */
-    animation-fill-mode: forwards;
+      background-color: #F93AC3;
+      animation-fill-mode: forwards;
   }
   
   @keyframes swapButtonOnAni {
@@ -63,7 +64,8 @@
     /* Safari and Chrome */
     -o-animation: swapButtonOffAni 500ms;
     /* Opera */
-    animation-fill-mode: forwards;
+      background-color: #3F3F3F;
+      animation-fill-mode: forwards;
   }
   
   @keyframes swapButtonOffAni {
