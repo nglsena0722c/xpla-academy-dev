@@ -27,6 +27,7 @@ import { useQueryClient } from "@tanstack/react-query";
 import ModalWrap from "../Modal/ModalWrap";
 import NowInConfirmationModal from "../Modal/NowInConfirmationModal";
 import TxInProgressModal from "../Modal/TxInProgressModal";
+import "./index.css";
 
 interface SWAPFORM {
   tknAmount: number | string;
@@ -609,8 +610,8 @@ const Swap = () => {
             !estimateFee
               ? "bg-[#3F3F3F]"
               : estimateFee === "-"
-              ? styles.swapButtonOff
-              : styles.swapButtonOn,
+              ? "swapButtonOff"
+              : "swapButtonOn",
             estimateFee && estimateFee !== "-" && "hover:cursor-pointer",
             tkn2xpla &&
               BigNumber(values?.tknAmount).isGreaterThan(userInfo.token)

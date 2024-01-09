@@ -350,8 +350,8 @@ const Convert = () => {
             !estimateFee
               ? "bg-[#3F3F3F]"
               : estimateFee === "-"
-              ? styles.convertButtonOff
-              : styles.convertButtonOn,
+              ? "convertButtonOff"
+              : "convertButtonOn",
             estimateFee && estimateFee !== "-" && "hover:cursor-pointer",
             dia2tkn &&
               new BigNumber(userInfo?.diamond).isLessThan(values.amount)

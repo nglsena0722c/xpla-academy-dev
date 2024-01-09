@@ -57,11 +57,11 @@ export default function LocaleDropdownNavbarItem({
       () => (<div className='mr-[11px] mt-[10px]'>
         <DropdownNavbarItem
           {...props}
-          disable={!window.location.pathname.startsWith('/startlearning')}
+          disable={!window.location.pathname.startsWith('/xpla-academy-dev/startlearning')}
           arrow={false}
           mobile={mobile}
           label={
-            <LanguageIcon sx={{ fontSize: 29, color: window.location.pathname.startsWith('/startlearning') ? 'white' : '#FFFFFF33' }} />
+            <LanguageIcon sx={{ fontSize: 29, color: window.location.pathname.startsWith('/xpla-academy-dev/sstartlearning') ? 'white' : '#FFFFFF33' }} />
         }
           items={items}
         />

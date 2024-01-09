@@ -1,0 +1,113 @@
+.swapButtonOn {
+    animation: swapButtonOnAni 500ms;
+    -moz-animation: swapButtonOnAni 500ms;
+    /* Firefox */
+    -webkit-animation: swapButtonOnAni 500ms;
+    /* Safari and Chrome */
+    -o-animation: swapButtonOnAni 500ms;
+    /* Opera */
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes swapButtonOnAni {
+    from {
+      background-color: #3F3F3F;
+    }
+  
+    to {
+      background-color: #F93AC3;
+    }
+  }
+  
+  @-moz-keyframes swapButtonOnAni {
+  
+    /* Firefox */
+    from {
+      background-color: #3F3F3F;
+    }
+  
+    to {
+      background-color: #F93AC3;
+    }
+  }
+  
+  @-webkit-keyframes swapButtonOnAni {
+  
+    /* Safari and Chrome */
+    from {
+      background-color: #3F3F3F;
+    }
+  
+    to {
+      background-color: #F93AC3;
+    }
+  }
+  
+  @-o-keyframes swapButtonOnAni {
+  
+    /* Opera */
+    from {
+      background-color: #3F3F3F;
+    }
+  
+    to {
+      background-color: #F93AC3;
+    }
+  }
+  
+  .swapButtonOff {
+    animation: swapButtonOffAni 500ms;
+    -moz-animation: swapButtonOffAni 500ms;
+    /* Firefox */
+    -webkit-animation: swapButtonOffAni 500ms;
+    /* Safari and Chrome */
+    -o-animation: swapButtonOffAni 500ms;
+    /* Opera */
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes swapButtonOffAni {
+    from {
+      background-color: #F93AC3;
+    }
+  
+    to {
+      background-color: #3F3F3F;
+    }
+  }
+  
+  @-moz-keyframes swapButtonOffAni {
+  
+    /* Firefox */
+    from {
+      background-color: #F93AC3;
+    }
+  
+    to {
+      background-color: #3F3F3F;
+    }
+  }
+  
+  @-webkit-keyframes swapButtonOffAni {
+  
+    /* Safari and Chrome */
+    from {
+      background-color: #F93AC3;
+    }
+  
+    to {
+      background-color: #3F3F3F;
+    }
+  }
+  
+  @-o-keyframes swapButtonOffAni {
+  
+    /* Opera */
+    from {
+      background-color: #F93AC3;
+    }
+  
+    to {
+      background-color: #3F3F3F;
+    }
+  }

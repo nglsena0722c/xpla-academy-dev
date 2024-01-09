@@ -27,28 +27,28 @@
 
 /* Tooltip container */
 .convertTooltip {
-    position: relative;
-    display: inline-flex;
-    border-bottom: 1px dotted black;
-    font-size: 14px;
-    /* If you want dots under the hoverable text */
+	position: relative;
+	display: inline-flex;
+	border-bottom: 1px dotted black;
+	font-size: 14px;
+	/* If you want dots under the hoverable text */
 }
 
 /* convertTooltip text */
 .convertTooltip .convertTooltipText {
-    visibility: hidden;
-    background-color: #6600FFBF;
-    color: #fff;
-    text-align:left;
-    min-width: 280px;
-    padding: 15px;
+	visibility: hidden;
+	background-color: #6600FFBF;
+	color: #fff;
+	text-align: left;
+	min-width: 280px;
+	padding: 15px;
 	/* backdrop-filter: blur(40px); */
-    font-weight: 400;
+	font-weight: 400;
 
-    line-height: normal;
-    /* Position the convertTooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
+	line-height: normal;
+	/* Position the convertTooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
 	bottom: calc(100% + 8px);
 	transform: translate(-50%, 0);
 	left: 50%;
@@ -73,7 +73,121 @@
 
 /* Show the convertTooltip text when you mouse over the convertTooltip container */
 .convertTooltip:hover .convertTooltipText {
-    visibility: visible;
-    -webkit-animation: fadeIn 0.2s ease-in-out;
+	visibility: visible;
+	-webkit-animation: fadeIn 0.2s ease-in-out;
 	animation: fadeIn 0.2s ease-in-out;
+}
+
+.convertButtonOn {
+	animation: convertButtonOnAni 500ms;
+	-moz-animation: convertButtonOnAni 500ms;
+	/* Firefox */
+	-webkit-animation: convertButtonOnAni 500ms;
+	/* Safari and Chrome */
+	-o-animation: convertButtonOnAni 500ms;
+	/* Opera */
+	animation-fill-mode: forwards;
+}
+
+@keyframes convertButtonOnAni {
+	from {
+		background-color: #3F3F3F;
+	}
+
+	to {
+		background-color: #6600FF;
+	}
+}
+
+@-moz-keyframes convertButtonOnAni {
+
+	/* Firefox */
+	from {
+		background-color: #3F3F3F;
+	}
+
+	to {
+		background-color: #6600FF;
+	}
+}
+
+@-webkit-keyframes convertButtonOnAni {
+
+	/* Safari and Chrome */
+	from {
+		background-color: #3F3F3F;
+	}
+
+	to {
+		background-color: #6600FF;
+	}
+}
+
+@-o-keyframes convertButtonOnAni {
+
+	/* Opera */
+	from {
+		background-color: #3F3F3F;
+	}
+
+	to {
+		background-color: #6600FF;
+	}
+}
+
+.convertButtonOff {
+	animation: convertButtonOffAni 500ms;
+	-moz-animation: convertButtonOffAni 500ms;
+	/* Firefox */
+	-webkit-animation: convertButtonOffAni 500ms;
+	/* Safari and Chrome */
+	-o-animation: convertButtonOffAni 500ms;
+	/* Opera */
+	animation-fill-mode: forwards;
+}
+
+@keyframes convertButtonOffAniAni {
+	from {
+		background-color: #6600FF;
+	}
+
+	to {
+		background-color: #3F3F3F;
+	}
+}
+
+@-moz-keyframes convertButtonOffAni {
+
+	/* Firefox */
+	from {
+		background-color: #6600FF;
+	}
+
+	to {
+		background-color: #3F3F3F;
+	}
+}
+
+@-webkit-keyframes convertButtonOffAni {
+
+	/* Safari and Chrome */
+	from {
+		background-color: #6600FF;
+	}
+
+	to {
+		background-color: #3F3F3F;
+	}
+}
+
+@-o-keyframes convertButtonOffAni {
+
+	/* Opera */
+	from {
+		background-color: #6600FF;
+	}
+
+	to {
+		background-color: #3F3F3F;
+	}
 }
