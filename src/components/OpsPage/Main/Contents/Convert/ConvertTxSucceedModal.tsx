@@ -34,12 +34,12 @@ export default function ConvertTxSucceedModal({
             {dia2tkn ? (
               <img
                 className="w-[28px]"
-                src="/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-diamond.svg"
+                src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-diamond.svg"
               />
             ) : (
               <img
                 className="w-[28px]"
-                src="/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg"
+                src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg"
               />
             )}
 
@@ -52,12 +52,12 @@ export default function ConvertTxSucceedModal({
             {!dia2tkn ? (
               <img
                 className="w-[28px]"
-                src="/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-diamond.svg"
+                src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-diamond.svg"
               />
             ) : (
               <img
                 className="w-[28px]"
-                src="/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg"
+                src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg"
               />
             )}
             <span className="font-normal leading-[16px] text-[16px]">

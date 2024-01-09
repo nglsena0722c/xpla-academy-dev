@@ -62,14 +62,14 @@ export default function UserStatus() {
             {isCopy && (
               <div className="absolute bottom-[26px] w-[60px] left-[-10px] ">
                 <img
-                  src="/img/DevResource/copied.svg"
+                  src="/xpla-academy-dev/img/DevResource/copied.svg"
                   className={clsx(!copyAnimation && styles.fadeOut)}
                 />
               </div>
             )}
             <img
               onClick={handleClickCopy}
-              src="/img/DevResource/CopyButton.svg"
+              src="/xpla-academy-dev/img/DevResource/CopyButton.svg"
               className="hover:cursor-pointer hover:opacity-60"
               alt="copyButton"
               width="15px"

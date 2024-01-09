@@ -150,7 +150,7 @@ export default function Inventory() {
         </div>
         <div className="flex items-center gap-[13px]">
           <img
-            src="/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg"
+            src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg"
             alt="academy-token"
             width="31px"
             height="30px"
@@ -164,7 +164,7 @@ export default function Inventory() {
         </div>
         <div className="flex items-center gap-[13px]">
           <img
-            src="/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-diamond.svg"
+            src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-diamond.svg"
             alt="academy-diamond"
             width="31px"
             height="30px"

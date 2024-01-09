@@ -57,7 +57,7 @@ export default function SwapDropdown({
 
   const xplaImgsrc = "/xpla-academy-dev/img/opspage/Main/stroke-xpla.svg";
   const tokenImgsrc =
-    "/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg";
+    "/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg";
 
   const XPLADropdown = (
     <div

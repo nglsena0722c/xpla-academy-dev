@@ -242,7 +242,7 @@ const Convert = () => {
                 {dia2tkn ? (
                   <img
                     className="w-[70px]"
-                    src="/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-diamond.svg"
+                    src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-diamond.svg"
                     alt="academy-diamond"
                     width="70px"
                     height="68px"
@@ -250,7 +250,7 @@ const Convert = () => {
                 ) : (
                   <img
                     className="w-[70px]"
-                    src="/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg"
+                    src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg"
                     alt="academy-token"
                     width="70px"
                     height="68px"
@@ -271,7 +271,7 @@ const Convert = () => {
                 {!dia2tkn ? (
                   <img
                     className="w-[70px]"
-                    src="/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-diamond.svg"
+                    src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-diamond.svg"
                     alt="academy-diamond"
                     width="70px"
                     height="68px"
@@ -279,7 +279,7 @@ const Convert = () => {
                 ) : (
                   <img
                     className="w-[70px]"
-                    src="/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg"
+                    src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg"
                     alt="academy-token"
                     width="70px"
                     height="68px"

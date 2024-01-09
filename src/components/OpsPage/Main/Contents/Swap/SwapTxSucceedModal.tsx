@@ -37,7 +37,7 @@ export default function SwapTxSucceedModal({
             {tkn2xpla ? (
               <img
                 className="w-[28px]"
-                src="/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg"
+                src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg"
               />
             ) : (
               <img
@@ -67,7 +67,7 @@ export default function SwapTxSucceedModal({
             ) : (
               <img
                 className="w-[28px]"
-                src="/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg"
+                src="/xpla-academy-dev/img/3-tutorial/3-deep-understand-xpla/5-convert/academy-token.svg"
               />
             )}
             <span className="font-normal leading-[16px] text-[16px]">
