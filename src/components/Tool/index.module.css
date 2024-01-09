@@ -171,17 +171,17 @@
 }
 
 .convertButtonOn {
-  animation: convertButtonOn 500ms;
-  -moz-animation: convertButtonOn 500ms;
+  animation: convertButtonOnAni 500ms;
+  -moz-animation: convertButtonOnAni 500ms;
   /* Firefox */
-  -webkit-animation: convertButtonOn 500ms;
+  -webkit-animation: convertButtonOnAni 500ms;
   /* Safari and Chrome */
-  -o-animation: convertButtonOn 500ms;
+  -o-animation: convertButtonOnAni 500ms;
   /* Opera */
   animation-fill-mode: forwards;
 }
 
-@keyframes convertButtonOn {
+@keyframes convertButtonOnAni {
   from {
     background-color: #3F3F3F;
   }
@@ -191,7 +191,7 @@
   }
 }
 
-@-moz-keyframes convertButtonOn {
+@-moz-keyframes convertButtonOnAni {
 
   /* Firefox */
   from {
@@ -203,7 +203,7 @@
   }
 }
 
-@-webkit-keyframes convertButtonOn {
+@-webkit-keyframes convertButtonOnAni {
 
   /* Safari and Chrome */
   from {
@@ -215,7 +215,7 @@
   }
 }
 
-@-o-keyframes convertButtonOn {
+@-o-keyframes convertButtonOnAni {
 
   /* Opera */
   from {
@@ -228,17 +228,17 @@
 }
 
 .convertButtonOff {
-  animation: convertButtonOff 500ms;
-  -moz-animation: convertButtonOff 500ms;
+  animation: convertButtonOffAni 500ms;
+  -moz-animation: convertButtonOffAni 500ms;
   /* Firefox */
-  -webkit-animation: convertButtonOff 500ms;
+  -webkit-animation: convertButtonOffAni 500ms;
   /* Safari and Chrome */
-  -o-animation: convertButtonOff 500ms;
+  -o-animation: convertButtonOffAni 500ms;
   /* Opera */
   animation-fill-mode: forwards;
 }
 
-@keyframes convertButtonOff {
+@keyframes convertButtonOffAniAni {
   from {
     background-color: #6600FF;
   }
@@ -248,7 +248,7 @@
   }
 }
 
-@-moz-keyframes convertButtonOff {
+@-moz-keyframes convertButtonOffAni {
 
   /* Firefox */
   from {
@@ -260,7 +260,7 @@
   }
 }
 
-@-webkit-keyframes convertButtonOff {
+@-webkit-keyframes convertButtonOffAni {
 
   /* Safari and Chrome */
   from {
@@ -272,7 +272,7 @@
   }
 }
 
-@-o-keyframes convertButtonOff {
+@-o-keyframes convertButtonOffAni {
 
   /* Opera */
   from {
@@ -285,17 +285,17 @@
 }
 
 .swapButtonOn {
-  animation: swapButtonOn 500ms;
-  -moz-animation: swapButtonOn 500ms;
+  animation: swapButtonOnAni 500ms;
+  -moz-animation: swapButtonOnAni 500ms;
   /* Firefox */
-  -webkit-animation: swapButtonOn 500ms;
+  -webkit-animation: swapButtonOnAni 500ms;
   /* Safari and Chrome */
-  -o-animation: swapButtonOn 500ms;
+  -o-animation: swapButtonOnAni 500ms;
   /* Opera */
   animation-fill-mode: forwards;
 }
 
-@keyframes swapButtonOn {
+@keyframes swapButtonOnAni {
   from {
     background-color: #3F3F3F;
   }
@@ -305,7 +305,7 @@
   }
 }
 
-@-moz-keyframes swapButtonOn {
+@-moz-keyframes swapButtonOnAni {
 
   /* Firefox */
   from {
@@ -317,7 +317,7 @@
   }
 }
 
-@-webkit-keyframes swapButtonOn {
+@-webkit-keyframes swapButtonOnAni {
 
   /* Safari and Chrome */
   from {
@@ -329,7 +329,7 @@
   }
 }
 
-@-o-keyframes swapButtonOn {
+@-o-keyframes swapButtonOnAni {
 
   /* Opera */
   from {
@@ -342,17 +342,17 @@
 }
 
 .swapButtonOff {
-  animation: swapButtonOff 500ms;
-  -moz-animation: swapButtonOff 500ms;
+  animation: swapButtonOffAni 500ms;
+  -moz-animation: swapButtonOffAni 500ms;
   /* Firefox */
-  -webkit-animation: swapButtonOff 500ms;
+  -webkit-animation: swapButtonOffAni 500ms;
   /* Safari and Chrome */
-  -o-animation: swapButtonOff 500ms;
+  -o-animation: swapButtonOffAni 500ms;
   /* Opera */
   animation-fill-mode: forwards;
 }
 
-@keyframes swapButtonOff {
+@keyframes swapButtonOffAni {
   from {
     background-color: #F93AC3;
   }
@@ -362,7 +362,7 @@
   }
 }
 
-@-moz-keyframes swapButtonOff {
+@-moz-keyframes swapButtonOffAni {
 
   /* Firefox */
   from {
@@ -374,7 +374,7 @@
   }
 }
 
-@-webkit-keyframes swapButtonOff {
+@-webkit-keyframes swapButtonOffAni {
 
   /* Safari and Chrome */
   from {
@@ -386,7 +386,7 @@
   }
 }
 
-@-o-keyframes swapButtonOff {
+@-o-keyframes swapButtonOffAni {
 
   /* Opera */
   from {
