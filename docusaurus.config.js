@@ -77,7 +77,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/logo512.png',
+      image: 'img/xpla-social-card.png',
       metadata: [
         {name: 'xpla-wallet'},
       ],
@@ -87,12 +87,11 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Start Learning',
           },
           {
-            to: 'tool',
-            label: 'Tool',
-            position: 'left',
+            type: 'localeDropdown',
+            position: 'right',
           },
           {
             href: 'https://github.com/xpladev',
@@ -101,13 +100,9 @@ const config = {
             'aria-label': 'GitHub repository',
           },
           {
-            type: 'localeDropdown',
-            position: 'right',
-          },
-          {
             type: 'search',
             position : 'right'
-          }
+          },
         ],
       },
       footer: {

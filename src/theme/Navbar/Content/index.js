@@ -6,16 +6,11 @@ import {
   useNavbarMobileSidebar,
 } from '@docusaurus/theme-common/internal';
 import NavbarItem from '@theme/NavbarItem';
-import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
-import SearchBar from '@theme/SearchBar';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
-import NavbarLogo from '@theme/Navbar/Logo';
-import NavbarSearch from '@theme/Navbar/Search';
 import styles from './styles.module.css';
 import clsx from 'clsx';
-import Connect from "@site/src/components/Wallet/Connect";
-import WalletWrap from "@site/src/components/Wallet/WalletWrap";
 import useMediaQuery from '@mui/material/useMediaQuery';
+import GNBDropdown from "./GNBDropdown"
 
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
@@ -45,11 +40,7 @@ function NavbarContentLayout({left, right}) {
   return (
     <div className="navbar__inner max-w-[1180px]">
       <div className="navbar__items">{left}</div>
-      <div className="navbar__items navbar__items--right">
-        {/* <WalletWrap>
-          <Connect />
-        </WalletWrap> */}
-        {right}</div>
+      <div className="navbar__items navbar__items--right">{right}</div>
     </div>
   );
 }
@@ -57,23 +48,23 @@ export default function NavbarContent() {
   const mobileSidebar = useNavbarMobileSidebar();
   const items = useNavbarItems();
   const [leftItems, rightItems] = splitNavbarItems(items);
-  const searchBarItem = items.find((item) => item.type === 'search');
   const isMobile = useMediaQuery('(max-width:996px)');
-
+  
   return (
     <NavbarContentLayout
       left={
         // TODO stop hardcoding items?
         <>
           {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
-          <Link to="/" className={clsx("flex items-center", styles.LogoAcademyLetter)}>
+          <Link aria-label="open-root" to="/" className={clsx("flex items-center max-[270px]:hidden", styles.LogoAcademyLetter)}>
             <div />
           </Link>
           {
             leftItems.map((leftItem, index) => {
-              return <NavbarItem {...leftItem} className={index === 0 ? "text-white ml-[78px]" : "text-white ml-[28px]"} />
-            })  
+              return <NavbarItem key={index} {...leftItem} className={index === 0 ? "text-white text-medium ml-[78px]" : "text-white text-medium ml-[28px]"} />
+            })
           }
+          <GNBDropdown />
           {/* <div className={clsx("font-semibold ml-10", styles.tool)} /> */}
         </>
       }
