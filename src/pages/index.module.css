@@ -3,7 +3,7 @@
  * and scoped locally.
  */
 
-.heroBanner {
+ .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
@@ -16,33 +16,19 @@
   }
 }
 
-.explorerPlay {
-  position: absolute;
-  left: 618px;
-  top: 71px;
-  
-  @media screen and (max-width : 1536px) {
-    position: unset;
-    width : 50%;
-  }
-  @media screen and (max-width : 1066px) {
-    position: unset;
-    width : 40%;
-  }
-  @media screen and (max-width : 900px) {
-    display : none;
-  }
-}
-
 .earth {
   position: absolute;
-  top: 560px;
-  left: -130px;
+  bottom: 0px;
+  left: -122px;
+}
 
-  @media screen and (max-width : 1536px) {
+@media screen and (max-width : 1536px) {
+  .earth{
     left : 0px;
   }
-  @media screen and (max-width : 900px) {
+}
+@media screen and (max-width : 900px) {
+  .earth{
     display : none;
   }
 }

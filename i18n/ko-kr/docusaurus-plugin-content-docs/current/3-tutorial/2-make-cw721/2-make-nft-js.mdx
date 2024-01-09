@@ -48,7 +48,7 @@ XPLA 블록체인은 스마트 컨트랙트 플랫폼인 `Cosmwasm`을 이용합
 
 <br/>
 
-Preview Code를 이해하셨다면, [아래 내용](/docs/tutorial/make-cw721/make-nft-js#instantiate-runjs)을 읽지 않고 바로 [다음 단계](/docs/tutorial/make-cw721/query-cw721)로 넘어가셔도 좋습니다.
+Preview Code를 이해하셨다면, [아래 내용](/startlearning/tutorial/make-cw721/make-nft-js#instantiate-runjs)을 읽지 않고 바로 [다음 단계](/startlearning/tutorial/make-cw721/query-cw721)로 넘어가셔도 좋습니다.
 
 <br/>
 
@@ -60,7 +60,7 @@ CW721 컨트랙트를 생성해봅시다. CW721 컨트랙트의 Code ID는 메�
 
 EVM과 달리, Cosmwasm에서는 코드 배포(Code Deploy)와 컨트랙트 생성이 한번에 이뤄지지 않습니다. 먼저 코드를 블록체인에 배포(StoreCode)하면 해당 코드의 `Code ID`를 발급 받습니다. 이후 `Code ID`를 기반으로 컨트랙트를 생성(InstantiateContract)할 수 있습니다.
 
-똑같은 Code ID로 생성된 컨트랙트들은 모두 같은 코드 기반입니다. 다만 컨트랙트를 생성할 때 입력하는 초깃값(init_msg)이 다르면, 컨트랙트의 세부 사항도 달라집니다. 더 자세한 사항은 [XPLA Docs](https://docs.xpla.io/docs/develop/core-modules/wasm/#code-id)를 참고해보세요.
+똑같은 Code ID로 생성된 컨트랙트들은 모두 같은 코드 기반입니다. 다만 컨트랙트를 생성할 때 입력하는 초깃값(init_msg)이 다르면, 컨트랙트의 세부 사항도 달라집니다. 더 자세한 사항은 [XPLA Docs](https://startlearning.xpla.io/startlearning/develop/core-modules/wasm/#code-id)를 참고해보세요.
 
 </Details>
 
@@ -352,7 +352,7 @@ const mintJSON = {
 };
 ```
 
-더 자세히 알고 싶으시다면 [CW721 Github](https://github.com/xpladev/cw-nfts/tree/main/contracts/cw721-metadata-onchain)을 살펴보시거나, [XPLA Explorer](https://explorer.xpla.io/)에서 다른 NFT를 참고해보시기 바랍니다. [OpenSea Metadata 기준](https://docs.opensea.io/docs/metadata-standards)을 읽어보시는 것도 좋습니다.
+더 자세히 알고 싶으시다면 [CW721 Github](https://github.com/xpladev/cw-nfts/tree/main/contracts/cw721-metadata-onchain)을 살펴보시거나, [XPLA Explorer](https://explorer.xpla.io/)에서 다른 NFT를 참고해보시기 바랍니다. [OpenSea Metadata 기준](https://startlearning.opensea.io/startlearning/metadata-standards)을 읽어보시는 것도 좋습니다.
 
 </Details>
 

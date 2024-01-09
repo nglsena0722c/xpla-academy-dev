@@ -7,7 +7,7 @@ const katex = require('rehype-katex');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'XPLA Academy',
-  tagline: 'Easily navigate the quick guides!',
+  tagline: 'Master the DEV world of XPLA step by step!',
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here
@@ -45,6 +45,9 @@ const config = {
             math
           ],
           rehypePlugins: [katex],
+
+          path: 'startlearning',
+          routeBasePath: 'startlearning',
         },
         blog: {
           showReadingTime: true,
@@ -115,7 +118,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/overview/intro',
+                to: '/startlearning/overview/intro',
               },
             ],
           },
