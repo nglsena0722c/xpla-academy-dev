@@ -16,7 +16,7 @@ interface UserInfoResponse {
 
 const useUserInfo = () => {
     const { userAddress } = useUserAddress();
-    console.log(process.env.REACT_APP_SERVERURL);
+    console.log(process.env.REACT_APP_SERVERURL, 1);
 
     return useQuery({
         queryKey: ['useUserInfo', userAddress],
