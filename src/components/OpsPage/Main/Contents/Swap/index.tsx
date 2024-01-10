@@ -665,7 +665,7 @@ const Swap = () => {
 
           {modalOpen === TXMODALTYPE.TXFAIL && (
             <TxFailModal
-              title={"CONVERT"}
+              title={"SWAP"}
               requestError={requestError}
               estimateFee={
                 estimateFee !== '-'
