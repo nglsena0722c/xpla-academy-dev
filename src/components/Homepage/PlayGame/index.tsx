@@ -42,7 +42,7 @@ export default function PlayGame({
         <div className="mb-[51px]">
           <img
             className="min-[921px]:hidden"
-            src="/img/PlayGame/comingsoon.svg"
+            src="/xpla-academy-dev/img/PlayGame/comingsoon.svg"
           />
           <Cocosgame />
         </div>

@@ -12,7 +12,7 @@ const MainGame = () => {
       <img
         className="z-10 min-[921px]:hidden"
         alt="onlyavailablepc"
-        src="/img/PlayGame/comingsoon.svg"
+        src="/xpla-academy-dev/img/PlayGame/comingsoon.svg"
       />
       <Cocosgame />
       <div className="absolute bottom-[47px] arrow-hidden ">
