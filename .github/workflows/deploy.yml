@@ -17,7 +17,11 @@ jobs:
         with:
           node-version: 18
           cache: npm
-          
+
+      - name: Setting .env
+        run: |
+          echo "REACT_APP_SERVERURL=${{ secrets.REACT_APP_SERVERURL }}" >> .env
+
       - name: Get current time
         uses: 1466587594/get-current-time@v2
         id: current-time
