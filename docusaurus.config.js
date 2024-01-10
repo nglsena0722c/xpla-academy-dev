@@ -171,7 +171,13 @@ const config = {
         },
       };
     },
-    'docusaurus-node-polyfills'
+    'docusaurus-node-polyfills',
+    [
+      "docusaurus2-dotenv",
+      {
+        systemvars: true,
+      },
+    ],
   ],
   markdown: {
     mermaid: true,
