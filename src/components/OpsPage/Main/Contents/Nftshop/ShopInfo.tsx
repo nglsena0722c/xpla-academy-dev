@@ -106,7 +106,7 @@ const ShopInfo = ({
   async function waitResult(resTxhash) {
     try {
       const txRes = await axios.get(
-        `${process.env.REACT_APP_SERVERURL}wallet/txinfo?txhash=${resTxhash}`
+        `https://gw-qa-gcl.c2xstation.net:40201/wallet/txinfo?txhash=${resTxhash}`
       );
       if (txRes.data.returnCode === "500") {
         setTimeout(waitResult, 1000, resTxhash);
