@@ -93,7 +93,6 @@ export default function SwapDropdown({
     <div
       ref={dropdownRef}
       className={clsx(
-        "navbar__item",
         "dropdown",
         "dropdown--hoverable",
         "p-0",
