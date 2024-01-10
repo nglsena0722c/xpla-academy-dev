@@ -4,6 +4,8 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const math = require('remark-math');
 const katex = require('rehype-katex');
 
+require('dotenv').config();
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'XPLA Academy',
