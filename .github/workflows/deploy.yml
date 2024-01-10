@@ -29,11 +29,16 @@ jobs:
       - name: Show Current Time
         run: echo "CurrentTime=${{steps.current-time.outputs.formattedTime}}"
         shell: bash
+      - name: Show Secret variable
+        run: echo "${{ secrets.REACT_APP_SERVERURL }}"
+        shell: bash
 
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
       - name: Build website
         run: npm run build
+        env:
+          REACT_APP_SERVERURL: ${{ secrets.REACT_APP_SERVERURL }}
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
