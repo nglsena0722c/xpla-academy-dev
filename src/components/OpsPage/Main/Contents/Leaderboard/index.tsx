@@ -384,6 +384,17 @@ const Leaderboard = () => {
                     )}
                   </div>
                 </div>
+                {rankinglist?.returnMsg === "success" &&
+                  rankinglist?.score?.toString() === "0" && (
+                    <div className="absolute w-full h-full flex flex-col justify-center items-center bg-[#000000CC]">
+                      <span className="text-white font-normal text-[24px] leading-[26px]">
+                        No
+                      </span>
+                      <span className="text-[#FF640C] font-bold text-[28px] leading-[26px]">
+                        "DATA"
+                      </span>
+                    </div>
+                  )}
                 {rankinglist?.isRecoding === 1 && (
                   <div className="absolute w-full h-full flex flex-col justify-center items-center bg-[#000000CC]">
                     <span className="text-white font-normal text-[24px] leading-[26px]">
