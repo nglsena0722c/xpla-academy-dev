@@ -57,11 +57,11 @@ export default function LocaleDropdownNavbarItem({
       () => (<div className='mr-[11px] mt-[10px]'>
         <DropdownNavbarItem
           {...props}
-          disable={!(window.location.pathname.startsWith('/startlearning') || window.location.pathname.startsWith('/ko-kr/startlearning') || window.location.pathname === "/" || window.location.pathname === "/ko-kr/")}
+          disable={!(window.location.pathname.startsWith('/xpla-academy-dev/startlearning') || window.location.pathname.startsWith('/xpla-academy-dev/ko-kr/startlearning') || window.location.pathname === "/xpla-academy-dev/" || window.location.pathname === "/xpla-academy-dev/ko-kr/")}
           arrow={false}
           mobile={mobile}
           label={
-            <LanguageIcon sx={{ fontSize: 29, color: (window.location.pathname.startsWith('/startlearning') || window.location.pathname.startsWith('/ko-kr/startlearning') || window.location.pathname === "/" || window.location.pathname === "/ko-kr/") ? 'white' : '#FFFFFF33' }} />
+            <LanguageIcon sx={{ fontSize: 29, color: (window.location.pathname.startsWith('/xpla-academy-dev/startlearning') || window.location.pathname.startsWith('/xpla-academy-dev/ko-kr/startlearning') || window.location.pathname === "/xpla-academy-dev/" || window.location.pathname === "/ko-kr/") ? 'white' : '#FFFFFF33' }} />
           }
           items={items}
         />
