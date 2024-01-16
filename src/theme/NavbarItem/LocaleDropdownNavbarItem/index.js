@@ -61,7 +61,7 @@ export default function LocaleDropdownNavbarItem({
           arrow={false}
           mobile={mobile}
           label={
-            <LanguageIcon sx={{ fontSize: 29, color: (window.location.pathname.startsWith('/xpla-academy-dev/startlearning') || window.location.pathname.startsWith('/xpla-academy-dev/ko-kr/startlearning') || window.location.pathname === "/xpla-academy-dev/ko-kr/" || window.location.pathname === "/xpla-academy-dev/") ? 'white' : '#FFFFFF33' }} />
+            <LanguageIcon sx={{ fontSize: 29, color: (window.location.pathname.startsWith('/xpla-academy-dev/startlearning') || window.location.pathname.startsWith('/xpla-academy-dev/ko-kr/startlearning') || window.location.pathname === "/xpla-academy-dev/" || window.location.pathname === "/xpla-academy-dev/ko-kr/") ? 'white' : '#FFFFFF33' }} />
           }
           items={items}
         />
