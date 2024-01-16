@@ -52,7 +52,6 @@ export default function LocaleDropdownNavbarItem({
       description: 'The label for the mobile language switcher dropdown',
     })
     : localeConfigs[currentLocale].label;
-    console.log(window.location)
   return <BrowserOnly>
     {
       () => (<div className='mr-[11px] mt-[10px]'>
