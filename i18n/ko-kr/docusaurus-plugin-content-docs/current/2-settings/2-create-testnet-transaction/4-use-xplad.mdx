@@ -16,20 +16,20 @@ xplad로 cli에서 트랜잭션을 생성하고, query를 보낼 수도 있습�
 
 2. 아래 명령어로 XPLA를 전송하는 트랜잭션을 생성할 수 있습니다. 
 ```bash
-xplad tx bank send <from-key-or-address> <to-address> <coins> --chain-id=<chain-id> --fees=<fee> --node tcp://34.64.250.213:26657
+xplad tx bank send <from-key-or-address> <to-address> <coins> --chain-id=<chain-id> --fees=<fee> --node https://cube-rpc.xpla.dev:443
 ```
 
 예제에서 지갑 이름은 `test1`이었습니다. 따라서 Faucet 주소 `xpla1a8f3wnn7qwvwdzxkc9w849kfzhrr6gdvy4c8wv`에 1axpla를 전송하는 명령어는 아래와 같습니다.
 
 ```bash
-xplad tx bank send test1 xpla1a8f3wnn7qwvwdzxkc9w849kfzhrr6gdvy4c8wv 1axpla --chain-id=cube_47-5 --fees=170000000000000000axpla --node tcp://34.64.250.213:26657
+xplad tx bank send test1 xpla1a8f3wnn7qwvwdzxkc9w849kfzhrr6gdvy4c8wv 1axpla --chain-id=cube_47-5 --fees=170000000000000000axpla --node https://cube-rpc.xpla.dev:443
 ```
 
-<Details summary="34.64.250.213:26657 주소는 어떤 주소인가요?">
+<Details summary="https://cube-rpc.xpla.dev:443 주소는 어떤 주소인가요?">
 
 해당 주소는 테스트넷 rpc 주소입니다. 위 주소를 통해 XPLA 블록체인 테스트넷과 통신할 수 있습니다.
 
-메인넷에 연결할 경우 `--node tcp://104.197.217.143:26657`로 입력하시면 됩니다.
+메인넷에 연결할 경우 `--node https://dimension-rpc.xpla.dev:443`로 입력하시면 됩니다.
 
 </Details>
 
@@ -69,13 +69,13 @@ txhash: A8FA5E9E6B54DF2E52C088CF860B6F9BA82D0497AEE1790DE5564CAFA2FD9373
 xplad로 query를 보내서 트랜잭션 데이터를 가져오는 방법은 간단합니다. 아래 명령어만 입력하면 끝입니다.
 
 ```bash
-xplad query tx <txhash> --node tcp://34.64.250.213:26657
+xplad query tx <txhash> --node https://cube-rpc.xpla.dev:443
 ```
 
 예제에서 만든 트랜잭션 해시값은 `A8FA5E9E6B54DF2E52C088CF860B6F9BA82D0497AEE1790DE5564CAFA2FD9373`이었습니다. 따라서 예제에선 아래와 같은 명령어로 트랜잭션 데이터를 얻을 수 있습니다.
 
 ```bash
-xplad query tx A8FA5E9E6B54DF2E52C088CF860B6F9BA82D0497AEE1790DE5564CAFA2FD9373 --node tcp://34.64.250.213:26657
+xplad query tx A8FA5E9E6B54DF2E52C088CF860B6F9BA82D0497AEE1790DE5564CAFA2FD9373 --node https://cube-rpc.xpla.dev:443
 ```
 
 이렇게 xplad를 활용하여 트랜잭션을 생성해보고, 트랜잭션 데이터도 구해보았습니다. xplad에 관해 더 자세하게 알고 싶다면 [Docs](https://startlearning.xpla.io/startlearning/develop/tools/xplad/about-xplad/)를 참고해보세요.
