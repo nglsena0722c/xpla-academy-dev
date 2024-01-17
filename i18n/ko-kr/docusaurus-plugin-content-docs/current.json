@@ -3,16 +3,21 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.Create wallet": {
+  "sidebar.tutorialSidebar.category.Let's get your Wallet ready!": {
     "message": "지갑 생성하기",
-    "description": "this is 지갑 생성하기"
+    "description": "Let's get your Wallet ready!"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
-    "message": "5 minutes to learn the most important Docusaurus concepts.",
-    "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Time to Make Transactions!": {
+    "message": "트랜잭션 생성하기",
+    "description": "Time to Make Transactions!"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Extras": {
-    "message": "Tutorial - Extras",
-    "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Utilize Tokens (CW20)": {
+    "message": "토큰(CW20) 다루기"
+  },
+  "sidebar.tutorialSidebar.category.Utilize NFT(CW721)": {
+    "message": "NFT(CW721) 다루기"
+  },
+  "sidebar.tutorialSidebar.category.Advanced - Dive deep into XPLA blockchain": {
+    "message": "심화 - XPLA 블록체인 깊게 이해하기"
   }
 }
