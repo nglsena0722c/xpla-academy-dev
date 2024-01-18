@@ -6,6 +6,7 @@ import { useLocation } from '@docusaurus/router';
 import DropdownNavbarItem from '../DropdownNavbarItem';
 import LanguageIcon from '@mui/icons-material/Language';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function LocaleDropdownNavbarItem({
   mobile,
@@ -16,6 +17,8 @@ export default function LocaleDropdownNavbarItem({
   const {
     i18n: { currentLocale, locales, localeConfigs },
   } = useDocusaurusContext();
+  const isMobile = useMediaQuery("(max-width:996px)");
+
   const alternatePageUtils = useAlternatePageUtils();
   const { search, hash } = useLocation();
   const localeItems = locales.map((locale) => {
@@ -61,7 +64,7 @@ export default function LocaleDropdownNavbarItem({
           arrow={false}
           mobile={mobile}
           label={
-            <LanguageIcon sx={{ fontSize: 29, color: (window.location.pathname.startsWith('/xpla-academy-dev/startlearning') || window.location.pathname.startsWith('/xpla-academy-dev/ko-kr/startlearning') || window.location.pathname === "/xpla-academy-dev/" || window.location.pathname === "/xpla-academy-dev/ko-kr/") ? 'white' : '#FFFFFF33' }} />
+            <LanguageIcon sx={{ fontSize: 29, color: (window.location.pathname.startsWith('/xpla-academy-dev/startlearning') || window.location.pathname.startsWith('/xpla-academy-dev/ko-kr/startlearning') || window.location.pathname === "/xpla-academy-dev/" || window.location.pathname === "/xpla-academy-dev/ko-kr/") ?  isMobile ? "#606770" : 'white' : '#FFFFFF33' }} />
           }
           items={items}
         />
