@@ -5,6 +5,7 @@ import Link from "@docusaurus/Link";
 import NorthIcon from '@mui/icons-material/North';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Modal from "@site/src/components/Modal";
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const LinkList = [
   {
@@ -173,7 +174,11 @@ export default function FooterLayout({ style, links, logo, copyright, scrollToTo
         </div> */}
 
       </div>
-      <Modal />
+      <BrowserOnly>
+      {
+        () => <Modal />
+      }
+      </BrowserOnly>
     </footer>
   );
 }
