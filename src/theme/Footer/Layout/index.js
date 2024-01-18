@@ -4,6 +4,7 @@ import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
 import NorthIcon from '@mui/icons-material/North';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import Modal from "@site/src/components/Modal";
 
 const LinkList = [
   {
@@ -172,6 +173,7 @@ export default function FooterLayout({ style, links, logo, copyright, scrollToTo
         </div> */}
 
       </div>
+      {/* <Modal /> */}
     </footer>
   );
 }
