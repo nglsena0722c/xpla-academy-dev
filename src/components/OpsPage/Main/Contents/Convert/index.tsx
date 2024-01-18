@@ -187,7 +187,7 @@ const Convert = () => {
     }
   };
 
-  const handleModalClose = () => {
+  const handleModalClose = async () => {
     if (
       modalOpen !== TXMODALTYPE.NOWINCONFIRMATION &&
       modalOpen !== TXMODALTYPE.TXINPROGRESS
@@ -197,6 +197,9 @@ const Convert = () => {
       setEstimateFee(null);
       reset();
       setTxhash(null);
+      await queryClient.invalidateQueries({
+        queryKey: ["useUserInfo", userAddress],
+      });
     }
   };
 

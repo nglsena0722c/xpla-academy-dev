@@ -246,7 +246,7 @@ const Swap = () => {
     }
   };
 
-  const handleModalClose = () => {
+  const handleModalClose = async () => {
     if (
       modalOpen !== TXMODALTYPE.NOWINCONFIRMATION &&
       modalOpen !== TXMODALTYPE.TXINPROGRESS
@@ -257,6 +257,9 @@ const Swap = () => {
       setTxhash(null);
       resetField("tknAmount");
       resetField("xplaAmount");
+      await queryClient.invalidateQueries({
+        queryKey: ["useUserInfo", userAddress],
+      });
     }
   };
 
