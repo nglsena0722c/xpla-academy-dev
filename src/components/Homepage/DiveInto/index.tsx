@@ -130,7 +130,7 @@ export default function DiveInto(): JSX.Element {
       />
       <div className="max-w-[1180px] w-full h-full flex flex-1 justify-center items-center z-10">
         <div className="flex flex-col max-[700px]:h-full flex-1 md:gap-[57px]">
-          <span className="text-[#000000] flex md:flex-1 justify-center font-bold md:text-[50px] text-[40px] leading-[60px]">
+          <span className="text-[#000000] flex md:flex-1 justify-center font-bold md:text-[50px] text-[35px] leading-[60px]">
             Dive into XPLA ACADEMY
           </span>
           <div className="flex-col md:flex-row flex flex-1 gap-[0px]">
