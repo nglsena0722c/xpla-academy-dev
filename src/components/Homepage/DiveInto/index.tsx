@@ -115,18 +115,18 @@ function Feature({ Svg, title, description, rightBorder, sizes, className }: Fea
 
 export default function DiveInto(): JSX.Element {
   return (
-    <section className="h-[1200px] md:h-[684px] bg-[#00B2FF] relative flex justify-center items-center px-[16px]">
+    <section className="h-[1200px] md:h-[684px] bg-[#00B2FF] relative flex justify-center items-center px-[16px] max-w-screen">
       <img
-        className={styles.ellipsis}
         src={`/xpla-academy-dev/img/DiveInto/ellipsis.svg`}
         alt="ellipsis"
         sizes="(min-width: 1780px) 303px"
+        className={clsx(styles.ellipsis, "max-[1780px]:hidden")}
       />
       <img
-        className={styles.square}
         src={`/xpla-academy-dev/img/DiveInto/square.svg`}
         alt="square"
         sizes="(min-width: 1780px) 308px"
+        className={clsx(styles.square, "max-[1780px]:hidden")}
       />
       <div className="max-w-[1180px] w-full h-full flex flex-1 justify-center items-center z-10">
         <div className="flex flex-col max-[700px]:h-full flex-1 md:gap-[57px]">
