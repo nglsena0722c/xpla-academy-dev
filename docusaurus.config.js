@@ -188,7 +188,6 @@ const config = {
     /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
     ({
       indexDocs: false,
-      blogRouteBasePath: "/",
       hashed: true,
       language: ["en", "ko"],
     }),
