@@ -18,7 +18,7 @@ const lcd = new LCDClient({ chainID, URL });
 
 const useMintUnsigned = () => {
     const { userAddress } = useUserAddress();
-    const unsignedUrl = `https://gw-qa-gcl.c2xstation.net:40201/wallet/wallet-minting-unsigned`;
+    const unsignedUrl = `https://gw-qa-gcl.c2xstation.net:40202/wallet/wallet-minting-unsigned`;
 
     const fetchData = async (idx: number) => {
         const addressinfo = await lcd.auth.accountInfo(userAddress || "");

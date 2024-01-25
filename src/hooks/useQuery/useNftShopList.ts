@@ -27,7 +27,7 @@ const useNftShopList = () => {
     return useQuery({
         queryKey: ['useNftShopList', userAddress],
         queryFn: async () => {
-            const { data } = await axios.post<NFTSHOPResponse>(`https://gw-qa-gcl.c2xstation.net:40201/wallet//wallet-nft-shop-list`, {
+            const { data } = await axios.post<NFTSHOPResponse>(`https://gw-qa-gcl.c2xstation.net:40202/wallet//wallet-nft-shop-list`, {
                 wallet: userAddress,
             });
             return data;

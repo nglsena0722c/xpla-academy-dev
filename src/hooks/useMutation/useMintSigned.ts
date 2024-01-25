@@ -15,7 +15,7 @@ interface Request {
 
 const useMintSigned = () => {
     const { userAddress } = useUserAddress();
-    const walletUrl = `https://gw-qa-gcl.c2xstation.net:40201/wallet/wallet-minting`;
+    const walletUrl = `https://gw-qa-gcl.c2xstation.net:40202/wallet/wallet-minting`;
 
     const fetchData = async (param: Request) => {
         const convertPost: any = {
