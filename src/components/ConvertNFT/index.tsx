@@ -52,7 +52,7 @@ import {
   
     const chainID = "cube_47-5";
     const URL = "https://cube-lcd.xpla.dev";
-    const walletServerAddr = "https://gw-qa-gcl.c2xstation.net:40202";
+    const walletServerAddr = "https://gw-qa-gcl.c2xstation.net:40201";
   
     const onSubmit = async ({ ...submitValues }: CONVERTFORM) => {
       try {
@@ -61,7 +61,7 @@ import {
         const userAddress = wallets[0].xplaAddress;
         const addressinfo = await lcd.auth.accountInfo(userAddress);
         const pubkey = addressinfo.getPublicKey() as SimplePublicKey;
-        // const walletServerAddr = "http://127.0.0.1:40202";
+        // const walletServerAddr = "http://127.0.0.1:40201";
   
         const unsignedPost = {
           wallet: userAddress,

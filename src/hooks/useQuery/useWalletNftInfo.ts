@@ -21,7 +21,7 @@ const useWalletNftInfo = (tokenId : string) => {
     return useQuery({
         queryKey: ['useWalletNftInfo', userAddress, tokenId],
         queryFn: async () => {
-            const { data } = await axios.post<WalletNftInfoResponse>(`https://gw-qa-gcl.c2xstation.net:40202/wallet/wallet-nft-info`, {
+            const { data } = await axios.post<WalletNftInfoResponse>(`https://gw-qa-gcl.c2xstation.net:40201/wallet/wallet-nft-info`, {
                 wallet: userAddress,
                 tokenId: tokenId,
             });

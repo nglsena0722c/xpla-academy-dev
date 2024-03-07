@@ -30,7 +30,7 @@ const RegisterCard = ({
         throw new Error("Connect Wallet!");
       }
 
-      const result : AxiosResponse = await axios.post('https://gw-qa-gcl.c2xstation.net:40202/wallet/wallet-connect', {
+      const result : AxiosResponse = await axios.post('https://gw-qa-gcl.c2xstation.net:40201/wallet/wallet-connect', {
         wallet : wallets[0].xplaAddress,
         id,
         password : pw

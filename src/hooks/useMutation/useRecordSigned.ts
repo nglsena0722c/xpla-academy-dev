@@ -15,7 +15,7 @@ interface Request {
 
 const useRecordSigned = () => {
     const { userAddress } = useUserAddress();
-    const walletUrl = `https://gw-qa-gcl.c2xstation.net:40202/wallet/wallet-score-record`;
+    const walletUrl = `https://gw-qa-gcl.c2xstation.net:40201/wallet/wallet-score-record`;
 
     const fetchData = async (param: Request) => {
         const recordPost: any = {

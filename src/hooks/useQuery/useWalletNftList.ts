@@ -17,7 +17,7 @@ const useWalletNftList = () => {
     return useQuery({
         queryKey: ['useWalletNftList', userAddress],
         queryFn: async () => {
-            const { data } = await axios.post<WalletNftListResponse>(`https://gw-qa-gcl.c2xstation.net:40202/wallet/wallet-nft-list`, {
+            const { data } = await axios.post<WalletNftListResponse>(`https://gw-qa-gcl.c2xstation.net:40201/wallet/wallet-nft-list`, {
                 wallet: userAddress,
                 startTokenId: "0",
             });

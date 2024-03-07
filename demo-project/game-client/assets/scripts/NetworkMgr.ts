@@ -5,7 +5,7 @@ import { _decorator, BlockInputEvents, instantiate, Label, Node,
 export class NetworkMgr {    
     private static instance: NetworkMgr = null;
 
-    private serverUrl: string = "your server ip";	//"http://127.0.0.1:40202/";
+    private serverUrl: string = "your server ip";	//"http://127.0.0.1:40201/";
     private connectNode: Node = null;
     private callBack: (response?: any) => void;
 

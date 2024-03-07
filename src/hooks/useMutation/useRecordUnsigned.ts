@@ -18,7 +18,7 @@ const lcd = new LCDClient({ chainID, URL });
 
 const useRecordUnsigned = () => {
     const { userAddress } = useUserAddress();
-    const unsignedUrl = `https://gw-qa-gcl.c2xstation.net:40202/wallet/wallet-score-record-unsigned`;
+    const unsignedUrl = `https://gw-qa-gcl.c2xstation.net:40201/wallet/wallet-score-record-unsigned`;
 
     const fetchData = async () => {
         const addressinfo = await lcd.auth.accountInfo(userAddress || "");

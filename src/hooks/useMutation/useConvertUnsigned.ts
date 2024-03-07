@@ -17,8 +17,8 @@ const lcd = new LCDClient({ chainID, URL });
 const useConvertUnsigned = (dia2tkn: boolean) => {
     const { userAddress } = useUserAddress();
     const unsignedUrl = dia2tkn
-        ? `https://gw-qa-gcl.c2xstation.net:40202/wallet/wallet-gamecurrency-to-coin-unsigned`
-        : `https://gw-qa-gcl.c2xstation.net:40202/wallet/wallet-coin-to-gamecurrency-unsigned`;
+        ? `https://gw-qa-gcl.c2xstation.net:40201/wallet/wallet-gamecurrency-to-coin-unsigned`
+        : `https://gw-qa-gcl.c2xstation.net:40201/wallet/wallet-coin-to-gamecurrency-unsigned`;
 
     const fetchData = async (amount: number | string) => {
         const addressinfo = await lcd.auth.accountInfo(userAddress);

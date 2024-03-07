@@ -25,7 +25,7 @@ const useRankingInfo = () => {
     return useQuery({
         queryKey: ['useRankingInfo', userAddress],
         queryFn: async () => {
-            const { data } = await axios.post<RANKRESPONSE>(`https://gw-qa-gcl.c2xstation.net:40202/wallet/wallet-ranking-info`, {
+            const { data } = await axios.post<RANKRESPONSE>(`https://gw-qa-gcl.c2xstation.net:40201/wallet/wallet-ranking-info`, {
                 wallet: userAddress,
             });
 

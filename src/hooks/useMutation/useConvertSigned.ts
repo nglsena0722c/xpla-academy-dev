@@ -16,8 +16,8 @@ interface Request {
 const useConvertSigned = (dia2tkn: boolean) => {
     const { userAddress } = useUserAddress();
     const walletUrl = dia2tkn
-        ? `https://gw-qa-gcl.c2xstation.net:40202/wallet/wallet-gamecurrency-to-coin`
-        : `https://gw-qa-gcl.c2xstation.net:40202/wallet/wallet-coin-to-gamecurrency`;
+        ? `https://gw-qa-gcl.c2xstation.net:40201/wallet/wallet-gamecurrency-to-coin`
+        : `https://gw-qa-gcl.c2xstation.net:40201/wallet/wallet-coin-to-gamecurrency`;
 
     const fetchData = async (param: Request) => {
         const convertPost: any = {

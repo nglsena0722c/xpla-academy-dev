@@ -21,7 +21,7 @@ const useUserInfo = () => {
     return useQuery({
         queryKey: ['useUserInfo', userAddress],
         queryFn: async () => {
-            const { data } = await axios.post<UserInfoResponse>(`https://gw-qa-gcl.c2xstation.net:40202/wallet/wallet-user-info`, {
+            const { data } = await axios.post<UserInfoResponse>(`https://gw-qa-gcl.c2xstation.net:40201/wallet/wallet-user-info`, {
                 wallet: userAddress,
             });
 
